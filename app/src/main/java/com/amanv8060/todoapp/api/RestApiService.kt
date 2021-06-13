@@ -5,14 +5,15 @@ import retrofit2.Call
 
 import retrofit2.Callback
 
-class RestApiService(private val api : RestApi) :BaseRepository() {
+class RestApiService(private val api: RestApi) : BaseRepository() {
 
     suspend fun signin(
         email: String,
         password: String
     ) = safeApiCall {
- api.signin(email, password)
+        api.signin(email, password)
     }
+
 //    fun addUser(email: String, password:String, ) -> Unit){
 //        val retrofit = ServiceBuilder.buildApi(RestApi::class.java)
 //        retrofit.addUser(email,password).enqueue(

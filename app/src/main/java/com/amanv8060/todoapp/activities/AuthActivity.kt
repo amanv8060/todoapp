@@ -1,7 +1,8 @@
-package com.amanv8060.todoapp
+package com.amanv8060.todoapp.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.amanv8060.todoapp.R
 
 class AuthActivity : AppCompatActivity() {
 

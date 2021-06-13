@@ -10,6 +10,18 @@
             android:name="com.amanv8060.todoapp.auth.LoginFragment"
             android:label="LoginFragment"
             tools:layout="@layout/fragment_login"
-            />
+            >
+            <action
+                android:id="@+id/action_loginFragment_to_signUpFragment"
+                app:destination="@id/signUpFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/signUpFragment"
+            android:name="com.amanv8060.todoapp.auth.SignUpFragment"
+            android:label="SignUpFragment" >
+            <action
+                android:id="@+id/action_signUpFragment_to_loginFragment"
+                app:destination="@id/loginFragment" />
+        </fragment>
 
     </navigation>

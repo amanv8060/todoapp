@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView3"
         android:layout_width="165dp"
         android:layout_height="202dp"
         android:scaleType="fitXY"
@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView4"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="128dp"
@@ -25,7 +25,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewSignUpEmail"
         style="@style/TextLabelDefault"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -33,10 +33,10 @@
         android:fontFamily="@font/poppins_bold"
         android:text="@string/email"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <EditText
-        android:id="@+id/editTextSignInEmailAddress"
+        android:id="@+id/editTextSignupEmailAddress"
         style="@style/TextInputDefault"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -49,10 +49,10 @@
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewSignUpEmail" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewSignUp2"
         style="@style/TextLabelDefault"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -61,10 +61,10 @@
         android:layout_marginTop="16dp"
         android:text="@string/password"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSignInEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignupEmailAddress" />
 
     <EditText
-        android:id="@+id/editTextSignInPassword"
+        android:id="@+id/editTextSignUpPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -75,36 +75,35 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewSignUp2" />
 
     <Button
-        android:id="@+id/buttonLogin"
+        android:id="@+id/buttonSignUp"
         style="@style/ButtonPrimary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:text="@string/login"
+        android:text="@string/signup"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSignInPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpPassword" />
 
     <TextView
-        android:id="@+id/textViewRegisterNow"
+        android:id="@+id/textViewLoginNow"
         style="@style/TextDefault"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:text="@string/don_t_have_an_account_register_now"
+        android:text="@string/already_have_an_account_login_now"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ProgressBar
-        android:id="@+id/progressBarLogIn"
+        android:id="@+id/progressBarSignupUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"

@@ -4,12 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.AuthActivity">
-
+    tools:context=".activities.MainTodoActivity">
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView"
-        android:name="androidx.navigation.fragment.AuthNavHostFragment"
+        android:id="@+id/fragmentAppView"
+        android:name="androidx.navigation.fragment.AppNavHostFragment"
         android:layout_width="409dp"
         android:layout_height="729dp"
         app:defaultNavHost="true"
@@ -17,8 +16,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/nav_auth" />
-
-
+        app:navGraph="@navigation/nav_app" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
