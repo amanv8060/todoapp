@@ -14,6 +14,13 @@ class RestApiService(private val api: RestApi) : BaseRepository() {
         api.signin(email, password)
     }
 
+    suspend fun signup(
+        email: String,
+        password: String
+    ) = safeApiCall {
+        api.signup(email,password)
+    }
+
 //    fun addUser(email: String, password:String, ) -> Unit){
 //        val retrofit = ServiceBuilder.buildApi(RestApi::class.java)
 //        retrofit.addUser(email,password).enqueue(
